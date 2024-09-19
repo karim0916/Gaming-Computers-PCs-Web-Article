@@ -1,0 +1,943 @@
+body {
+margin:0;  
+overflow-x: hidden;
+box-sizing: border-box;
+
+
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*, 
+ *:before, 
+ *:after {
+    padding: 0; 
+    margin: 0; 
+    box-sizing:border-box;
+ } 
+
+ .main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto; /* centers content horizontally */
+}
+
+
+
+
+
+.go {
+    margin-left: -50px;
+}
+
+.go1 {
+    position:absolute; 
+    left:50px;
+}
+
+.header a:after {
+    content: ""; 
+    position:absolute; 
+    background-color: black;  
+    height:3px;
+    width:0; 
+    left:0; 
+    bottom:-10px; 
+    transition:.3s;
+
+    a > img {
+        position:relative; 
+        z-index:1;
+    }
+    a > img + a:after {
+        content: none; 
+    }
+    
+} 
+.header a:hover:after {
+    width:100%;
+}
+nav {
+    min-width:600px; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center;  
+    gap:140px;
+    font-family: "Poppins"; 
+
+} 
+.header a {
+    margin-top:0px;
+    text-decoration: none;
+    position:relative;
+    z-index:2;
+    color:rgb(7, 7, 7); 
+    font-weight:900;
+    font-size:18px;  
+    padding: 0 10px;
+  
+    
+
+}
+a:hover {
+color:rgb(59, 59, 59);
+}
+
+
+.container {
+    position: fixed; 
+    margin-top:-300px;
+    margin-left:-25px;
+    z-index:10;
+}
+
+
+   
+ 
+.header {
+    padding:70px;  
+    background-color: rgb(243, 243, 243); 
+    border: 2px solid transparent; 
+    margin-left:5px;
+    width:1240px; 
+    z-index:10;
+    border-radius: 40px;
+    height:140px;
+   
+} 
+.extra-space{
+    padding:105px; 
+    opacity:0;
+
+}
+
+
+
+.extra{
+    padding:15px; 
+    background-color: grey;
+    margin-left:580px;
+    border-radius:5px;
+    width:250px;
+    height:30px;
+    
+
+}
+
+  
+
+.Monitors1 video {
+width:100%;
+height:100%;
+position:relative;
+left:20px;
+top:75px;
+}
+
+
+
+.move  { 
+  position:absolute;
+  left:460px;
+  top:-35px; 
+ 
+} 
+
+
+
+.logo img {
+    border-radius: 50px; 
+    width:120px; 
+    margin-left:130px;
+   margin-top:50px; 
+   position:relative;
+   z-index:1; 
+} 
+
+.intro {
+    height:90px;
+
+}    
+
+.intro video {
+   width:1500px;
+  position:absolute; 
+  top:800px; 
+  
+}
+
+
+.spartan h1 {
+   text-align:left; 
+}
+
+
+
+.title h1  {
+    text-align:left;
+    margin-top:290px;
+    font-family:"raleway";
+}
+
+.title h2  {
+    margin-top:25px;
+    margin-left:55px;
+    text-align:left;
+    font-family:"raleway";
+    font-size:17px;
+}
+
+.title h3{
+    font-family:"raleway";
+    margin-top:20px;
+    font-size:20px;
+}
+
+
+.think   {
+   width:300px;
+   margin-top:40px;
+margin-left:450px;
+   
+   
+   
+}
+
+
+.me {
+    width:40px;
+    border-radius:50%;
+    position:absolute; 
+    top:385px;
+    margin-left:0px;
+}
+
+
+.extra-space {
+    padding:70px;
+    margin-bottom:1000px;
+}
+
+#introduction h2 {
+    font-family:"raleway";
+    margin-top:200px;
+    margin-left:100px;
+
+}
+
+#introduction hr {
+    border: none; 
+    width: 20px; 
+    height: 3px;
+    background-color: rgb(1, 1, 1);
+    border-radius: 10px;
+    margin-left:100px;
+    box-sizing:border-box;
+
+
+
+   
+
+}
+
+#introduction h3 {
+    margin-top:25px;
+text-align:left;
+width:90%;
+     font-family:"raleway";
+     font-weight:600;
+     line-height:1.5;
+}
+
+
+.purpose {
+    margin-top:40px;
+    padding:50px;
+    background-color: rgb(230, 230, 229);
+    box-shadow: 0 5px 5px rgba(215, 211, 215, 0.449); 
+    border-radius:5px;
+} 
+
+.purpose h3 {
+    text-align:center; 
+}
+
+
+.purpose img {
+    width:50px; 
+    
+   
+} 
+
+#contact {
+    font-family:"raleway";
+    margin-top:300px;
+    margin-left:100px; 
+    width:500px;
+    
+
+
+
+} 
+
+.contect {
+    margin-left:-40px;
+}
+
+
+#contact hr {
+    border: none; 
+    width: 20px; 
+    height: 3px;
+    background-color: rgb(1, 1, 1);
+    border-radius: 10px;
+    margin-left:0px;
+    box-sizing:border-box;
+
+}
+
+#contact h3 {
+   
+    margin-top:45px;
+    margin-left:45px;
+
+   
+
+} 
+
+.email {
+    margin-bottom:70px;
+}
+
+#contact img {
+    width:50px;
+    transform: translateY(136%);
+} 
+
+.line hr {
+    border: none; 
+    width: 550px; 
+    height: 3px;
+    background-color: rgb(1, 1, 1);
+    border-radius: 10px;
+    margin-left:110px;
+    margin-top:-60px;
+    box-sizing:border-box;
+
+}
+
+.line1 hr {
+    border:none;
+    width: 550px; 
+    height: 3px;
+    background-color: rgb(1, 1, 1);
+    border-radius: 10px;
+   margin-top:45px;
+   margin-left:110px;
+    box-sizing:border-box;
+
+}
+
+.indeed-link a {
+    margin-left:220px;
+
+  
+    text-decoration: none; 
+    color:rgb(108, 108, 108); 
+    font-family:"raleway"; 
+    font-size:19px;
+}
+
+.indeed-link a:hover {
+    color:rgb(62, 61, 61);
+}
+
+.indeed-link {
+    margin-top:-34px;
+   
+}
+
+.contact-indeed {
+    margin-left:100px;
+    margin-top:15px;
+    width:50px;
+
+}
+
+
+.location h3 {
+    font-family:"raleway";
+}
+
+.location1 {
+    margin-left:145px;
+    margin-top:-40px;
+
+}
+
+.location2 {
+    margin-left:235px;
+    margin-top:-21px;
+    
+
+}
+
+
+.contact-indeed1 {
+    margin-left:105px;
+    margin-top:20px;
+
+    width:45px;
+}
+
+
+
+
+.Monitors1 {
+    margin-top:200px;
+    padding:100px; 
+    width:130%;
+    margin-left: -200px;
+    background-color: black;
+   
+}
+
+
+.Monitors1 h1 {
+    text-align:center;
+    margin-left:50px;
+   color:white; 
+  margin-top:-50px;
+  font-family:"raleway";
+  z-index:2;
+   
+   
+}
+
+.screen {
+    margin-left:450px;
+    margin-top:10px;
+    z-index:1;
+}
+
+
+.monitor-box-1 {
+margin-left:-200px;
+    padding:70px;
+    width:780px;
+    height:500px;
+    background-color: rgb(2, 2, 2);
+    z-index:4;
+}
+
+.monitor-box-4 {
+    padding:10px;
+    margin-left:-200px;
+   
+
+    width:780px;
+    height:550px;
+    background-color: rgb(8, 8, 8);
+}
+
+
+.monitor-box-8 {
+    padding:10px;
+    margin-left:-200px;
+   
+
+    width:780px;
+    height:550px;
+    background-color: rgb(8, 8, 8);
+}
+
+.monitor-box-5 {
+    padding:10px;
+    margin-left:-200px;
+   
+
+    width:780px;
+    height:550px;
+    background-color: rgb(8, 8, 8);
+}
+
+
+
+
+
+.monitor-box-3 {
+    padding:70px;
+    height:250px;
+    background-color: rgb(0, 0, 0);
+    margin-left:580px;
+    
+}
+
+
+
+
+.monitor-box-1 h2 {
+    font-family:"raleway";
+    text-align: center;
+    font-size:40px;
+    width:100%;
+    color:white;
+}
+
+
+.learn-more {
+    text-decoration: none;
+    font-family:"raleway";
+    font-weight:600;
+    border-radius:50px;
+    padding:20px;
+   margin-left:190px;
+   z-index:1;
+   
+  
+
+   
+    background-color: rgb(52, 52, 53);
+
+} 
+
+
+
+.monitor-box-1 a:hover {
+
+    background-color: rgb(103, 103, 105);
+}
+
+.monitor-box-3 a:hover {
+
+    background-color: rgb(103, 103, 105);
+}
+
+.monitor-box-1 a {
+    position:relative;
+    top:30px;
+    left:55px;
+    
+}
+
+.monitor-box-3 a {
+    position:relative;
+    top:30px;
+    left:-10px;
+    
+}
+
+.dell-monitor {
+    width:290px;
+    margin-top:90px;
+    margin-left:170px;
+
+}
+
+.samsung {
+    width:500px;
+    margin-top:90px;
+    margin-left:-10px;
+
+}
+
+.samsung1 {
+    width:250px;
+    margin-top:90px;
+    margin-left:120px;
+
+
+}
+
+
+
+.monitor-box-1 h1{
+    margin-left:870px;
+    margin-top:-420px;
+    font-family:"raleway";
+    font-size:40px;
+
+}
+
+
+#diagonal {
+    width:50px;
+    margin-left:670px;
+    margin-top:40px;
+}
+
+#resolution {
+    width:50px;
+    margin-left:670px;
+    margin-top:40px;
+}
+
+.monitor-box-1 h3 {
+    font-family:"raleway";
+    margin-left:740px;
+    margin-top:-43px;
+    width:100%;
+    color:black;
+
+}
+
+
+.titles {
+    margin-top: -110px;
+    margin-left:-25px;
+    padding: 15px;
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Align items in a column */
+    gap: 40px; /* Space between the names */
+}
+
+#resolution1 {
+    width:40px;
+margin-left:685px;
+    margin-top:-70px;
+}
+
+.titles h4 {
+    font-family:"raleway";
+    font-size:60px;
+    margin-left:990px;
+    margin-top:-200px;
+    color:rgb(193, 192, 192);
+}
+
+
+.monitor-box-3 h1 {
+    text-align:center;
+    font-family: "raleway";
+    color:white; 
+    font-size:35px;
+}
+
+
+.features {
+    padding:100px;
+    background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(-20px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+    border:1px solid rgb(242, 242, 240); 
+    width:500px;
+margin-left:650px;
+    margin-top:-1500px;
+    border-radius: 10px;
+    height:380px;
+    z-index:-1;
+
+}
+
+.features img {
+    display:block;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   top:20px;
+   left:-45px;
+width:40px; 
+
+    
+}
+
+.image-container1 img {
+    margin-bottom: 15px; 
+   
+    
+  } 
+
+  .lcd {
+    margin-bottom:50px;
+  }
+
+
+.features h1 {
+    text-align: center;
+    font-family: "raleway";
+    font-size:40px;
+    margin-top:-255px;
+}
+
+.features hr {
+    border:none;
+    height:3px;
+    background-color: black; 
+    border-radius:25px;
+    width:100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5px;
+}
+
+.features h3 {
+    font-family: "raleway";
+    font-size:20px;
+    margin-top:35px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+.icons img {
+    width:50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:-250px;
+    margin-left:50px;
+
+}
+
+
+
+  .png {
+    margin-top:20px;
+  }
+
+  
+
+  .icons1 img {
+    margin-left:500px;
+  }
+
+  .png {
+    margin-top:20px;
+  }
+
+
+  .features1 {
+position: relative;
+left:-690px;
+top:1620px;  
+z-index:-1;
+  } 
+
+
+  .features1 h1 {
+   margin-top:-260px;
+  }
+
+  .features1 h3 {
+    position: relative;
+    top:0px;
+  }
+
+  .features1 img {
+    position: relative;
+    left:-40px;
+    
+   
+  }
+  .image-container img {
+    margin-bottom: 15px; 
+  }
+
+  .icon {
+    font-size: 48px; 
+    color: rgb(7, 7, 7); 
+    margin: 10px 0; 
+
+  }
+
+
+  .image-container2 {
+   position:relative;
+   top:3250px; 
+}
+  
+  .monitor-box-4 h1 {
+    font-family:"raleway";
+    position:absolute;
+    left:-20px;
+    top:1950px;
+    color:white;
+    text-align: center;
+    z-index:4;
+  }
+
+
+  .monitor-box-8 h1 {
+    font-family:"raleway";
+    position:absolute;
+    left:100px;
+    top:2200px;
+    color:white;
+    text-align: center;
+    z-index:4;
+  }
+
+  .monitor-box-5 h1 {
+    font-family:"raleway";
+    position:absolute;
+    left:-20px;
+    top:1740px;
+    color:white;
+    text-align: center;
+    z-index:4;
+  }
+
+
+  .monitor-box-4 img {
+    width:400px;
+    margin-left:180px;
+    margin-top:200px;
+  }
+
+
+  .monitor-box-8 img {
+    width:200px;
+    margin-left:-25px;
+    margin-top:200px;
+  }
+
+  .monitor-box-5 img {
+    width:400px;
+    margin-left:180px;
+    margin-top:200px;
+  }
+
+  .monitor-box-4 a{
+    position: relative; 
+    left:130px;
+    top:100px;
+    z-index:4; 
+
+  }
+
+
+  .monitor-box-8 a{
+    position: relative; 
+    left:130px;
+    top:-420px;
+    z-index:4; 
+
+  }
+
+ 
+
+  .monitor-box-5 a{
+    position: relative; 
+    left:130px;
+    top:100px;
+    z-index:4; 
+
+  }
+
+  .monitor-box-4 a:hover {
+    background-color: rgb(103, 103, 105);
+  }
+
+  .monitor-box-8 a:hover {
+    background-color: rgb(103, 103, 105);
+  }
+
+  .monitor-box-5 a:hover {
+    background-color: rgb(103, 103, 105);
+  }
+
+  
+
+
+  #PCs1 {
+    padding:100px;
+    position:relative;
+    top:100px;
+    opacity:0;
+    padding:100px; 
+    width:130%;
+    margin-left: -200px; 
+    height:600px;
+    
+  }
+
+
+
+
+  #PCs {
+    padding:100px;
+    background-color: black;
+    margin-top:100px;
+    padding:100px; 
+    width:130%;
+    margin-left: -200px; 
+    height:600px;
+    
+  }
+
+  #PCs h1 {
+    color:white;
+    font-family: "raleway";
+    text-align: center;
+    position:relative;
+    left:18px;
+    top:-30px
+  }
+
+  #PCs video {
+    position: relative;
+    left:15px;
+
+    width:100%;
+    height:100%;
+  }
+
+
+  .monitors-wrapper{
+position:relative; 
+top:600px;
+
+
+  }
+
+
+  
+
+
+  .karim1 {
+    text-align:center;
+    color:rgb(10, 10, 10);
+    font-size:30px;
+    position:relative;
+    bottom:-3200px;
+   font-family:"raleway"; 
+   font-style:italic;
+   letter-spacing: 2px;
+   
+  }
+
+
+  .mcc1 img{
+    position:relative;
+    top:3090px;
+    left:-60px;
+    width:170px;
+
+  }
+
+
+
+  #Monitors {
+    padding:5px;
+    opacity:0;
+  }
+  .karim2 img {
+    position:relative;
+    top:2940px;
+    left:1090px;
+    width:170px;
+    z-index:-1;
+  }
+
+
+ 
